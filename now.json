@@ -3,6 +3,6 @@
     "name": "starwars",
     "builds": [{ "src": "starwars/package.json", "use": "@now/static-build", "config": {"distDir": "build"} }],
     "routes": [
-        { "src": "/(.*)", "dest": "project-name/$1" }
+        { "src": "/static/(.*)", "dest": "starwars/$1" }
     ]
 }
